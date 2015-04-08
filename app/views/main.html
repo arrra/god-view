@@ -1,1 +1,24 @@
-<p>This is main view</p>
+<form name="getRepoLinks">
+  <h1> Enter Your teams repo links </h1>
+  <md-input-container>
+  <p>Enter link 1</p>
+  <input name="repoLink1" ng-model="repoLink1" required >
+  <div ng-messages="getRepoLinks.repoLink1.$error" ng-show="userForm.bio.$dirty">
+    <div ng-message="required">This is required!</div>
+  </div>
+  </md-input-container>
+  <md-input-container>
+  <p>Enter link 2</p>
+  <input name="repoLink2" ng-model="repoLink2" required >
+  <div ng-messages="getRepoLinks.repoLink2.$error" ng-show="userForm.bio.$dirty">
+    <div ng-message="required">This is required!</div>
+  </div>
+  </md-input-container>
+  <md-input-container>
+  <p>Enter link 3</p>
+  <input name="repoLink3" ng-model="repoLink3" required >
+  <div ng-messages="getRepoLinks.repoLink3.$error" ng-show="userForm.bio.$dirty">
+    <div ng-message="required">This is required!</div>
+  </div>
+  </md-input-container>
+</form>
